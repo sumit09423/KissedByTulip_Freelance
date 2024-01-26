@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kissed by Tulips</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Luxury Flower Shop Located in Costa Mesa, CA that Specializes in Contemporary Floral Design"
+    />
+
+    <style>
+      .loader-first {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: #000;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .loader-first p {
+        margin-top: 1em;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 28px;
+      }
+
+      @media (min-width: 767px) {
+        .loader-first div {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+        }
+      }
+
+      .alert-warnning {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5em;
+        font-weight: 700;
+        color: #fff;
+        background: #000;
+        overflow: hidden;
+      }
+
+      .alert-warnning p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <link rel="icon" href="assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/assets/css/cdn.css" />
+    <link
+      href="assets/css/vendors/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/bootstrap-select.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/swiper.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/fancybox.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/vendors/aos.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/vendors/animate.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+  </head>
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-B3T8R9N5Z5"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-B3T8R9N5Z5");
+  </script>
+
+  <body>
+    <div id="portrait-warnning" class="alert-warnning" style="display: none">
+      <p>
+        For an optimal experience please<br />
+        rotate your device to portrait mode
+      </p>
+    </div>
+
+    <!--<div class="loader-first">
+    <div>
+        <img src="assets/images/logo.png" alt="Loader">
+    </div>
+</div>-->
+    <div class="top__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-3 col-lg-2 col-md-3 col-5 p-0">
+            <a href="javascript:;" class="top__wrap">
+              <div class="phone__logo">
+                <img src="assets/images/phone.svg" alt="Phone" />
+              </div>
+              <p>(949) 287 6622</p>
+            </a>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-6 col-0 p-0">
+            <div class="top__center">
+              <p>
+                Luxury Flower Shop Located in Costa Mesa, CA that Specializes in
+                Contemporary Floral Design
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-2 col-md-3 col-7 p-0">
+            <a href="javascript:;" class="top__wrap last-child">
+              <div class="email__logo">
+                <img src="assets/images/email.svg" alt="Email" />
+              </div>
+              <p>kissedbytulip@gmail.com</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl col-lg col-md-0 p-0">
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="our-story.html">our story</a></li>
+              <li><a href="javascript:;">contact</a></li>
+              <li><a href="javascript:;">Delivery</a></li>
+            </ul>
+          </div>
+          <div class="col-xl col-lg col-md-4 col-5 p-0">
+            <div class="brang__logo">
+              <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-xl col-lg p-0 col-md-4 col-4">
+            <div class="head__icons">
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/search.svg" alt="Search"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/account.svg" alt="Account"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/cart.svg" alt="Cart"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="toogle-wrap">
+            <div class="toggle-menu">
+              <a href="javascript:"
+                ><span></span><span></span><span></span><span></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="Main-pdp-section">
+        <div class="pdp_main">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__content">
+              <a href="index.html" class="pdp-a">Home</a>
+              <div class="breadcrumb__icon">
+                <img
+                  style="width: 15px"
+                  src="assets/images/Graterthan Arrow.png"
+                  alt="Breadcrumbs Icon"
+                />
+              </div>
+              <a href="index.html" class="pdp-a">Track Order</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h1 class="trac-h1">Order Tracking</h1>
+        <div class="card-track mt-4 p-0">
+          <!-- <label for="orderId">Enter Order ID:</label> -->
+          <input type="text" id="orderId" placeholder="Enter your order ID" />
+          <button class="track-btn" onclick="trackShipment()">
+            Track Shipment
+          </button>
+          <div id="shipmentDetails"></div>
+        </div>
+      </section>
+      <section class="container row mt-5 sm-mt-3 mb-5">
+        <div class="col-lg-6">
+          <p class="ot-p">Track Parcel</p>
+          <hr class="ot-under-p-hr" />
+          <div class="container p-0 mt-5">
+            <div class="progress-container">
+              <div class="progress" id="progress"></div>
+              <div class="text-wrap active">
+                <div class="circle">
+                  <svg
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 1024 1024"
+                    fill="#ffffff"
+                    class="icon"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M800.8 952c-31.2 0-56-24.8-56-56s24.8-56 56-56 56 24.8 56 56-25.6 56-56 56z m-448 0c-31.2 0-56-24.8-56-56s24.8-56 56-56 56 24.8 56 56-25.6 56-56 56zM344 792c-42.4 0-79.2-33.6-84-76l-54.4-382.4-31.2-178.4c-2.4-19.2-19.2-35.2-37.6-35.2H96c-13.6 0-24-10.4-24-24s10.4-24 24-24h40.8c42.4 0 80 33.6 85.6 76l31.2 178.4 54.4 383.2C309.6 728 326.4 744 344 744h520c13.6 0 24 10.4 24 24s-10.4 24-24 24H344z m40-128c-12.8 0-23.2-9.6-24-22.4-0.8-6.4 1.6-12.8 5.6-17.6s10.4-8 16-8l434.4-32c19.2 0 36-15.2 38.4-33.6l50.4-288c1.6-13.6-2.4-28-10.4-36.8-5.6-6.4-12.8-9.6-21.6-9.6H320c-13.6 0-24-10.4-24-24s10.4-24 24-24h554.4c22.4 0 42.4 9.6 57.6 25.6 16.8 19.2 24.8 47.2 21.6 75.2l-50.4 288c-4.8 41.6-42.4 74.4-84 74.4l-432 32c-1.6 0.8-2.4 0.8-3.2 0.8z"
+                        fill=""
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="text-wrap">
+                <div class="circle">
+                  <svg
+                    fill="#ffffff"
+                    height="31px"
+                    width="31px"
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 297 297"
+                    xml:space="preserve"
+                    stroke="#ffffff"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M283.52,143.802l-20.533-10.264l-9.382-37.524c-4.531-18.125-20.743-30.784-39.426-30.784h-41.217 c-5.458,0-9.884,4.425-9.884,9.884v6.424h-22.979v-39.04c0-5.458-4.425-9.884-9.884-9.884H64.984c-5.458,0-9.884,4.425-9.884,9.884 v39.04H32.369c-5.458,0-9.884,4.425-9.884,9.884v55.348H9.884c-5.458,0-9.884,4.425-9.884,9.884v65.231 c0,5.458,4.425,9.884,9.884,9.884h7.597c4.468,18.681,21.296,32.616,41.327,32.616s36.858-13.934,41.327-32.616h80.425 c4.468,18.681,21.296,32.616,41.327,32.616s36.858-13.934,41.327-32.616h9.409c13.443,0,24.38-10.937,24.38-24.379v-41.781 C297,156.314,291.835,147.959,283.52,143.802z M182.845,84.998h31.334c9.596,0,17.923,6.502,20.25,15.811l7.414,29.653h-58.997 V84.998z M163.078,146.77h-55.595v-45.464h55.595V146.77z M74.868,52.383h45.464v29.156H74.868V52.383z M42.252,101.306h45.464 v45.464H42.252V101.306z M58.807,244.617c-12.535,0-22.732-10.197-22.732-22.732s10.197-22.732,22.732-22.732 s22.732,10.197,22.732,22.732S71.342,244.617,58.807,244.617z M58.807,179.386c-17.477,0-32.52,10.608-39.04,25.721v-38.569h143.311 v45.464h-62.945C95.665,193.32,78.838,179.386,58.807,179.386z M221.885,244.617c-12.535,0-22.732-10.197-22.732-22.732 s10.197-22.732,22.732-22.732s22.732,10.197,22.732,22.732S234.42,244.617,221.885,244.617z M277.233,207.39 c0,2.543-2.069,4.612-4.613,4.612h-9.409c-4.468-18.681-21.296-32.616-41.327-32.616c-17.477,0-32.52,10.608-39.04,25.721V150.23 h69.324l22.512,11.253c1.573,0.787,2.551,2.368,2.551,4.126V207.39z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>  
+              <div class="text-wrap">
+                <div class="circle">
+                  <svg
+                    fill="#ffffff"
+                    height="31px"
+                    width="31px"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512 512"
+                    xml:space="preserve"
+                    stroke="#ffffff"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g>
+                          <path
+                            d="M376.608,176.569H261.832c-10.499,0-19.011,8.512-19.011,19.011v12.522l32.246,5.165 c19.328,3.096,32.535,21.34,29.438,40.668c-2.39,14.923-13.991,26.716-28.868,29.348c-2.029,0.359-4.103,0.541-6.164,0.541 c-1.879,0-3.775-0.151-5.637-0.45l-21.016-3.367v30.348c0,10.499,8.512,19.011,19.011,19.011h114.775 c10.499,0,19.011-8.512,19.011-19.011V195.58C395.619,185.081,387.107,176.569,376.608,176.569z"
+                          ></path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M272.783,227.522l-71.944-11.524l-23.723-52.043l31.446,38.659l15.608,2.5v-55.358c0-16.287-13.203-29.49-29.49-29.49 h-52.59c-16.287,0-29.49,13.203-29.49,29.49v151.54l9.544,76.98L80.741,478.767c-5.063,12.287,0.794,26.351,13.081,31.413 c12.29,5.064,26.352-0.799,31.413-13.081l43.812-106.339c1.579-3.834,2.142-8.012,1.631-12.126l-7.529-60.729h18.688l6.775,51.876 l-23.966,113.169c-2.753,13.001,5.554,25.771,18.554,28.524s25.772-5.556,28.524-18.554l24.819-117.191 c0.565-2.663,0.672-5.402,0.32-8.101l-11.815-90.466l-44.307-7.097c-16.653-2.664-26.257-16.224-27.709-23.49l-12.038-60.296 l26.195,57.47c2.927,6.419,8.87,10.947,15.835,12.062l83.096,13.31c10.296,1.65,20.129-4.482,23.328-14.169 C293.536,242.566,285.55,229.567,272.783,227.522z"
+                          ></path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <circle cx="168.617" cy="63.533" r="43.655"></circle>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M415.544,77.355H278.451c-9.684,0-17.535,7.851-17.535,17.535v47.823c0,9.684,7.851,17.535,17.535,17.535h137.093 c9.684,0,17.535-7.851,17.535-17.535V94.89C433.079,85.206,425.228,77.355,415.544,77.355z"
+                          ></path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M353.302,0H308.92c-4.655,0-8.428,3.773-8.428,8.428V52.81c0,4.655,3.774,8.428,8.428,8.428h44.382 c4.655,0,8.428-3.773,8.428-8.428V8.428C361.73,3.773,357.957,0,353.302,0z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="text-wrap">
+                <div class="circle">
+                  <svg
+                    width="31px"
+                    height="31px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke=""
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.7071 6.29289C20.0976 6.68342 20.0976 7.31658 19.7071 7.70711L10.4142 17C9.63316 17.7811 8.36683 17.781 7.58579 17L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929C3.68342 10.9024 4.31658 10.9024 4.70711 11.2929L9 15.5858L18.2929 6.29289C18.6834 5.90237 19.3166 5.90237 19.7071 6.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="status-order mt-5 ml-3">
+              <div class="so-circlel-clas">
+                <span class="so-circle">
+                  <svg
+                    width="40px"
+                    height="40px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke=""
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.7071 6.29289C20.0976 6.68342 20.0976 7.31658 19.7071 7.70711L10.4142 17C9.63316 17.7811 8.36683 17.781 7.58579 17L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929C3.68342 10.9024 4.31658 10.9024 4.70711 11.2929L9 15.5858L18.2929 6.29289C18.6834 5.90237 19.3166 5.90237 19.7071 6.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
+                <span class="pl-text">
+                  <span class="pl-text-title">Demo Text</span>
+                  <span>Order Date/Time</span>
+                </span>
+              </div>
+              <div class="so-circlel-clas">
+                <span class="so-circle">
+                  <svg
+                    width="40px"
+                    height="40px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke=""
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.7071 6.29289C20.0976 6.68342 20.0976 7.31658 19.7071 7.70711L10.4142 17C9.63316 17.7811 8.36683 17.781 7.58579 17L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929C3.68342 10.9024 4.31658 10.9024 4.70711 11.2929L9 15.5858L18.2929 6.29289C18.6834 5.90237 19.3166 5.90237 19.7071 6.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
+                <span class="pl-text">
+                  <span class="pl-text-title">Demo Text</span>
+                  <span>Order Date/Time</span>
+                </span>
+              </div>
+              <div class="so-circlel-clas">
+                <span class="so-circle">
+                  <svg
+                    width="40px"
+                    height="40px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke=""
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.7071 6.29289C20.0976 6.68342 20.0976 7.31658 19.7071 7.70711L10.4142 17C9.63316 17.7811 8.36683 17.781 7.58579 17L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929C3.68342 10.9024 4.31658 10.9024 4.70711 11.2929L9 15.5858L18.2929 6.29289C18.6834 5.90237 19.3166 5.90237 19.7071 6.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
+                <span class="pl-text">
+                  <span class="pl-text-title">Demo Text</span>
+                  <span>Order Date/Time</span>
+                </span>
+              </div>
+              <div class="so-circlel-clas">
+                <span class="so-circle">
+                  <svg
+                    width="40px"
+                    height="40px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke=""
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.7071 6.29289C20.0976 6.68342 20.0976 7.31658 19.7071 7.70711L10.4142 17C9.63316 17.7811 8.36683 17.781 7.58579 17L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929C3.68342 10.9024 4.31658 10.9024 4.70711 11.2929L9 15.5858L18.2929 6.29289C18.6834 5.90237 19.3166 5.90237 19.7071 6.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
+                <span class="pl-text">
+                  <span class="pl-text-title">Demo Text</span>
+                  <span>Order Date/Time</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <p class="ot-p">Customer Information</p>
+          <hr class="ot-under-p-hr" />
+          <div class="mt-5 ml-3">
+            <span class="pl-text mt-5">
+              <span class="pl-text-title">Order ID</span>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </span>
+            <span class="pl-text mt-5">
+              <span class="pl-text-title">Customer Name</span>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </span>
+            <span class="pl-text mt-5">
+              <span class="pl-text-title">Address</span>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </span>
+            <span class="pl-text mt-5 mb-4">
+              <span class="pl-text-title">Placed At</span>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </span>
+          </div>
+        </div>
+      </section >
+    </main>
+
+    <footer class="inner">
+      <div class="container">
+        <div class="row m-0 align-items-start justify-content-between">
+          <div class="col-12 p-0">
+            <div class="footer__top">
+              <div class="footer__logo">
+                <a href="index.html">
+                  <img src="assets/images/footer-logo.svg" alt="Footer Logo" />
+                </a>
+              </div>
+              <div class="footer__image">
+                <img src="assets/images/footer-image.png" alt="Footer Image" />
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__left">
+              <h4>Visit us</h4>
+              <p>
+                1838 Newport Blvd. Costa Mesa, Ca 92627
+                <span>Monday to Friday: 9:00am - 4:00pm</span>
+                <span>Saturday & Sunday: By Appointment Only</span>
+                (949) 287 6622
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__center">
+              <h4>Customer care</h4>
+              <div class="footer__nav">
+                <ul>
+                  <li><a href="javascript:;">Search</a></li>
+                  <li><a href="javascript:;">Contact</a></li>
+                  <li><a href="javascript:;">Privacy policy</a></li>
+                  <li><a href="javascript:;">Terms of service</a></li>
+                  <li>
+                    <a href="javascript:;"
+                      >Do not sell my personal information</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 p-0">
+            <div class="footer__right">
+              <h4>SIGN UP AND SAVE</h4>
+              <p>
+                Subscribe to get special offers, free giveaways, and
+                once-in-a-lifetime deals.
+              </p>
+              <form>
+                <div class="form-group">
+                  <input
+                    required
+                    class="form-control"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                  <button type="submit" class="signup__btn">Shop now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-7 p-0">
+            <div class="bottom__left">
+              <p>© 2023 Kissed By Tulips</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-5 p-0">
+            <div class="bottom__social">
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/facebook.svg" alt="Facebook"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/twitter.svg" alt="Twitter"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/instagram.svg" alt="Instagram"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="counter">
+    <a class="counter" href='https://thesiswritingservice.net/'>thesiswritingservice.net</a>
+    <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=40f121f6a4c07b28bfa1b637af226baf6d4035a5'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/927393/t/2"></script>
+</div>-->
+
+    <!-- Call on All Page -->
+    <script src="assets/js/vendors/a-jquery.js"></script>
+    <script src="assets/js/vendors/popper.min.js"></script>
+    <script src="assets/js/vendors/c-jquery.inview.min.js"></script>
+    <script src="assets/js/vendors/g-bootstrap.min.js"></script>
+    <script src="assets/js/vendors/b-css_browser_selector.js"></script>
+    <script src="assets/js/vendors/f-fancybox.js"></script>
+    <script src="assets/js/vendors/d-swiper.min.js"></script>
+    <script src="assets/js/vendors/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom Javascript for UI -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+      AOS.init({
+        offset: 10,
+      });
+    </script>
+
+    <!-- Script for track delivery -->
+  </body>
+</html>

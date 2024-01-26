@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kissed by Tulips</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Luxury Flower Shop Located in Costa Mesa, CA that Specializes in Contemporary Floral Design"
+    />
+
+    <style>
+      .loader-first {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: #000;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .loader-first p {
+        margin-top: 1em;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 28px;
+      }
+
+      @media (min-width: 767px) {
+        .loader-first div {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+        }
+      }
+
+      .alert-warnning {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5em;
+        font-weight: 700;
+        color: #fff;
+        background: #000;
+        overflow: hidden;
+      }
+
+      .alert-warnning p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #006a6d;
+        color: #fff;
+      }
+
+      td {
+        background-color: #e0f7fa;
+      }
+    </style>
+
+    <link rel="icon" href="assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="assets/css/vendors/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/bootstrap-select.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/swiper.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/fancybox.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/vendors/aos.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/vendors/animate.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+  </head>
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-B3T8R9N5Z5"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-B3T8R9N5Z5");
+  </script>
+
+  <body>
+    <div id="portrait-warnning" class="alert-warnning" style="display: none">
+      <p>
+        For an optimal experience please<br />
+        rotate your device to portrait mode
+      </p>
+    </div>
+
+    <!--<div class="loader-first">
+    <div>
+        <img src="assets/images/logo.png" alt="Loader">
+    </div>
+</div>-->
+    <div class="top__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-3 col-lg-2 col-md-3 col-5 p-0">
+            <a href="javascript:;" class="top__wrap">
+              <div class="phone__logo">
+                <img src="assets/images/phone.svg" alt="Phone" />
+              </div>
+              <p>(949) 287 6622</p>
+            </a>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-6 col-0 p-0">
+            <div class="top__center">
+              <p>
+                Luxury Flower Shop Located in Costa Mesa, CA that Specializes in
+                Contemporary Floral Design
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-2 col-md-3 col-7 p-0">
+            <a href="javascript:;" class="top__wrap last-child">
+              <div class="email__logo">
+                <img src="assets/images/email.svg" alt="Email" />
+              </div>
+              <p>kissedbytulip@gmail.com</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl col-lg col-md-0 p-0">
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="our-story.html">our story</a></li>
+              <li><a href="javascript:;">contact</a></li>
+              <li><a href="javascript:;">Delivery</a></li>
+            </ul>
+          </div>
+          <div class="col-xl col-lg col-md-4 col-5 p-0">
+            <div class="brang__logo">
+              <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-xl col-lg p-0 col-md-4 col-4">
+            <div class="head__icons">
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/search.svg" alt="Search"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/account.svg" alt="Account"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/cart.svg" alt="Cart"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="toogle-wrap">
+            <div class="toggle-menu">
+              <a href="javascript:"
+                ><span></span><span></span><span></span><span></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="Main-pdp-section">
+        <div class="pdp_main">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__content">
+              <a href="index.html" class="pdp-a">Home</a>
+              <div class="breadcrumb__icon">
+                <img
+                  style="width: 15px"
+                  src="assets/images/Graterthan Arrow.png"
+                  alt="Breadcrumbs Icon"
+                />
+              </div>
+              <a href="index.html" class="pdp-a">User Profile</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mb-3" id="main-admin">
+        <div class="aside">
+          <span class="profile-sec">
+            <img
+              class="img-man"
+              src="./assets/images/shop2.png"
+              alt="User Image"
+            />
+            <p class="up-title">Username</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <span> </span>
+          </span>
+          <div class="menu" onclick="changeContent('menu1')">
+            Basic Information
+          </div>
+          <div class="menu" onclick="changeContent('menu2')">Notification</div>
+          <div class="menu" onclick="changeContent('menu3')">Order History</div>
+          <div class="menu" onclick="changeContent('menu4')">
+            Delivery History
+          </div>
+          <div class="menu" onclick="changeContent('menu5')">
+            Payment Information
+          </div>
+          <div class="menu" onclick="changeContent('menu6')">Refund</div>
+          <!-- <div class="menu" onclick="changeContent('menu7')">Edit Profile</div> -->
+        </div>
+        <div class="main-admin-section-edit">
+          <div id="menu1" class="submenu">
+            <h2 class="uad-h2">User Information</h2>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Demo</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iste, nostrum!</label
+                >
+              </div>
+              <button type="submit" class="btn sub-ad-btn">Save Changes</button>
+            </form>
+          </div>
+
+          <!-- Repeat the same structure for other menus -->
+
+          <div id="menu2" class="submenu">
+            <h2 class="uad-h2">Notification</h2>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Demo</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iste, nostrum!</label
+                >
+              </div>
+              <button type="submit" class="btn sub-ad-btn">Save Changes</button>
+            </form>
+          </div>
+
+          <div id="menu3" class="submenu">
+            <h2 class="uad-h2">Order History</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-small">Order ID</th>
+                  <th class="th-small">Product</th>
+                  <th class="th-small">Quantity</th>
+                  <th class="th-small">Total Price</th>
+                  <th class="th-small">Order Date</th>
+                  <th class="th-small">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="th-small">1</td>
+                  <td class="th-small">Product A</td>
+                  <td class="th-small">3</td>
+                  <td class="th-small">$150.00</td>
+                  <td class="th-small">2023-01-15</td>
+                  <td class="th-small">Shipped</td>
+                </tr>
+                <tr>
+                  <td class="th-small">2</td>
+                  <td class="th-small">Product B</td>
+                  <td class="th-small">2</td>
+                  <td class="th-small">$100.00</td>
+                  <td class="th-small">2023-02-02</td>
+                  <td class="th-small">Delivered</td>
+                </tr>
+                <!-- Add more orders as needed -->
+              </tbody>
+            </table>
+          </div>
+
+          <div id="menu4" class="submenu">
+            <h2 class="uad-h2">Delivery History</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-small">Order ID</th>
+                  <th class="th-small">Product</th>
+                  <th class="th-small">Quantity</th>
+                  <th class="th-small">Total Price</th>
+                  <th class="th-small">Order Date</th>
+                  <th class="th-small">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="th-small">1</td>
+                  <td class="th-small">Product A</td>
+                  <td class="th-small">3</td>
+                  <td class="th-small">$150.00</td>
+                  <td class="th-small">2023-01-15</td>
+                  <td class="th-small">Shipped</td>
+                </tr>
+                <tr>
+                  <td class="th-small">2</td>
+                  <td class="th-small">Product B</td>
+                  <td class="th-small">2</td>
+                  <td class="th-small">$100.00</td>
+                  <td class="th-small">2023-02-02</td>
+                  <td class="th-small">Delivered</td>
+                </tr>
+                <!-- Add more orders as needed -->
+              </tbody>
+            </table>
+          </div>
+
+          <div id="menu5" class="submenu">
+            <h2 class="uad-h2">Payment Information</h2>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Demo</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iste, nostrum!</label
+                >
+              </div>
+              <button type="submit" class="btn sub-ad-btn">Save Changes</button>
+            </form>
+          </div>
+
+          <div id="menu6" class="submenu">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Demo</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Demo</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iste, nostrum!</label
+                >
+              </div>
+              <button type="submit" class="btn sub-ad-btn">Save Changes</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="inner">
+      <div class="container">
+        <div class="row m-0 align-items-start justify-content-between">
+          <div class="col-12 p-0">
+            <div class="footer__top">
+              <div class="footer__logo">
+                <a href="index.html">
+                  <img src="assets/images/footer-logo.svg" alt="Footer Logo" />
+                </a>
+              </div>
+              <div class="footer__image">
+                <img src="assets/images/footer-image.png" alt="Footer Image" />
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__left">
+              <h4>Visit us</h4>
+              <p>
+                1838 Newport Blvd. Costa Mesa, Ca 92627
+                <span>Monday to Friday: 9:00am - 4:00pm</span>
+                <span>Saturday & Sunday: By Appointment Only</span>
+                (949) 287 6622
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__center">
+              <h4>Customer care</h4>
+              <div class="footer__nav">
+                <ul>
+                  <li><a href="javascript:;">Search</a></li>
+                  <li><a href="javascript:;">Contact</a></li>
+                  <li><a href="javascript:;">Privacy policy</a></li>
+                  <li><a href="javascript:;">Terms of service</a></li>
+                  <li>
+                    <a href="javascript:;"
+                      >Do not sell my personal information</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 p-0">
+            <div class="footer__right">
+              <h4>SIGN UP AND SAVE</h4>
+              <p>
+                Subscribe to get special offers, free giveaways, and
+                once-in-a-lifetime deals.
+              </p>
+              <form>
+                <div class="form-group">
+                  <input
+                    required
+                    class="form-control form-contact-us"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                  <button type="submit" class="signup__btn">Shop now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-7 p-0">
+            <div class="bottom__left">
+              <p>© 2023 Kissed By Tulips</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-5 p-0">
+            <div class="bottom__social">
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/facebook.svg" alt="Facebook"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/twitter.svg" alt="Twitter"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/instagram.svg" alt="Instagram"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="counter">
+    <a class="counter" href='https://thesiswritingservice.net/'>thesiswritingservice.net</a>
+    <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=40f121f6a4c07b28bfa1b637af226baf6d4035a5'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/927393/t/2"></script>
+</div>-->
+
+    <!-- Call on All Page -->
+    <script src="assets/js/vendors/a-jquery.js"></script>
+    <script src="assets/js/vendors/popper.min.js"></script>
+    <script src="assets/js/vendors/c-jquery.inview.min.js"></script>
+    <script src="assets/js/vendors/g-bootstrap.min.js"></script>
+    <script src="assets/js/vendors/b-css_browser_selector.js"></script>
+    <script src="assets/js/vendors/f-fancybox.js"></script>
+    <script src="assets/js/vendors/d-swiper.min.js"></script>
+    <script src="assets/js/vendors/aos.js"></script>
+
+    <!-- custom Javascript for UI -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+      AOS.init({
+        offset: 10,
+      });
+    </script>
+
+    <script>
+      // Define the function to switch content
+      function changeContent(menuId) {
+        // Hide all submenus
+        const submenus = document.querySelectorAll(".submenu");
+        submenus.forEach((submenu) => {
+          submenu.style.display = "none";
+        });
+
+        // Show the selected submenu
+        const selectedMenu = document.getElementById(menuId);
+        if (selectedMenu) {
+          selectedMenu.style.display = "block";
+        }
+      }
+
+      // Call the function with "menu1" as the default submenu to show
+      changeContent("menu1");
+    </script>
+  </body>
+</html>

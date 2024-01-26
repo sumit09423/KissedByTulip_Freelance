@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kissed by Tulips</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Luxury Flower Shop Located in Costa Mesa, CA that Specializes in Contemporary Floral Design"
+    />
+
+    <style>
+      .loader-first {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: #000;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .loader-first p {
+        margin-top: 1em;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 28px;
+      }
+
+      @media (min-width: 767px) {
+        .loader-first div {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+        }
+      }
+
+      .alert-warnning {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5em;
+        font-weight: 700;
+        color: #fff;
+        background: #000;
+        overflow: hidden;
+      }
+
+      .alert-warnning p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+      }
+
+      .heart-icon path {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 0.576;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: fill 0.3s ease;
+      }
+
+      .heart-icon.checked path {
+        fill: red;
+      }
+    </style>
+
+    <link rel="icon" href="assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="assets/css/vendors/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/bootstrap-select.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/swiper.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/fancybox.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/vendors/aos.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/vendors/animate.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+  </head>
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-B3T8R9N5Z5"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-B3T8R9N5Z5");
+  </script>
+
+  <body>
+    <div id="portrait-warnning" class="alert-warnning" style="display: none">
+      <p>
+        For an optimal experience please<br />
+        rotate your device to portrait mode
+      </p>
+    </div>
+
+    <!--<div class="loader-first">
+    <div>
+        <img src="assets/images/logo.png" alt="Loader">
+    </div>
+</div>-->
+    <div class="top__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-3 col-lg-2 col-md-3 col-5 p-0">
+            <a href="javascript:;" class="top__wrap">
+              <div class="phone__logo">
+                <img src="assets/images/phone.svg" alt="Phone" />
+              </div>
+              <p>(949) 287 6622</p>
+            </a>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-6 col-0 p-0">
+            <div class="top__center">
+              <p>
+                Luxury Flower Shop Located in Costa Mesa, CA that Specializes in
+                Contemporary Floral Design
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-2 col-md-3 col-7 p-0">
+            <a href="javascript:;" class="top__wrap last-child">
+              <div class="email__logo">
+                <img src="assets/images/email.svg" alt="Email" />
+              </div>
+              <p>kissedbytulip@gmail.com</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl col-lg col-md-0 p-0">
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="our-story.html">our story</a></li>
+              <li><a href="javascript:;">contact</a></li>
+              <li><a href="javascript:;">Delivery</a></li>
+            </ul>
+          </div>
+          <div class="col-xl col-lg col-md-4 col-5 p-0">
+            <div class="brang__logo">
+              <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-xl col-lg p-0 col-md-4 col-4">
+            <div class="head__icons">
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/search.svg" alt="Search"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/account.svg" alt="Account"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/cart.svg" alt="Cart"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="toogle-wrap">
+            <div class="toggle-menu">
+              <a href="javascript:"
+                ><span></span><span></span><span></span><span></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="Main-pdp-section">
+        <div class="pdp_main">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__content">
+              <a href="index.html" class="pdp-a">Home</a>
+              <div class="breadcrumb__icon">
+                <img
+                  style="width: 15px"
+                  src="assets/images/Graterthan Arrow.png"
+                  alt="Breadcrumbs Icon"
+                />
+              </div>
+              <a href="index.html" class="pdp-a">Search Product</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="col-md-12 p-0 row" id="search">
+          <div class="form-group col-md-9">
+            <input
+              class="form-control p-search"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <button type="submit" class="btn btn-block btn-primary ps-btn">
+              Search
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-12 p-0 row" id="filter">
+          <div class="form-group col-sm-3 col-xs-6">
+            <select
+              data-filter="make"
+              class="filter-make filter form-control ps-filter"
+            >
+              <option value="">Select Make</option>
+              <option value="">Show All</option>
+              <option value="">New Arrivel</option>
+              <option value="">Top Rated</option>
+              <option value="">All IN One</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-3 col-xs-6">
+            <select
+              data-filter="model"
+              class="filter-model filter form-control ps-filter"
+            >
+              <option value="">Select Model</option>
+              <option value="">Show All</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-3 col-xs-6">
+            <select
+              data-filter="type"
+              class="filter-type filter form-control ps-filter"
+            >
+              <option value="">Select Type</option>
+              <option value="">Show All</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-3 col-xs-6">
+            <select
+              data-filter="price"
+              class="filter-price filter form-control ps-filter"
+            >
+              <option value="">Select Price Range</option>
+              <option value="">Show All</option>
+            </select>
+          </div>
+        </div>
+        <div class="row" id="products"></div>
+      </section>
+      <section class="container my-5">
+        <div class="categoty__main">
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop1.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Pool side</h4>
+              <p>$125.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop2.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Be Kind</h4>
+              <p>$125.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop3.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Sherbet</h4>
+              <p>$75.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop1.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Pool side</h4>
+              <p>$125.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop2.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Be Kind</h4>
+              <p>$125.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop3.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Sherbet</h4>
+              <p>$75.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop1.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Pool side</h4>
+              <p>$125.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop2.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Be Kind</h4>
+              <p>$125.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop3.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Sherbet</h4>
+              <p>$75.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop1.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Pool side</h4>
+              <p>$125.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop2.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Be Kind</h4>
+              <p>$125.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="shop__box">
+            <div class="box__image">
+              <img src="assets/images/shop3.png" alt="Shop1" />
+            </div>
+            <div class="box__bottom">
+              <h4>Sherbet</h4>
+              <p>$75.00</p>
+              <div class="heart-icon" onclick="toggleHeart(this)">
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      class="heart-path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="inner">
+      <div class="container">
+        <div class="row m-0 align-items-start justify-content-between">
+          <div class="col-12 p-0">
+            <div class="footer__top">
+              <div class="footer__logo">
+                <a href="index.html">
+                  <img src="assets/images/footer-logo.svg" alt="Footer Logo" />
+                </a>
+              </div>
+              <div class="footer__image">
+                <img src="assets/images/footer-image.png" alt="Footer Image" />
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__left">
+              <h4>Visit us</h4>
+              <p>
+                1838 Newport Blvd. Costa Mesa, Ca 92627
+                <span>Monday to Friday: 9:00am - 4:00pm</span>
+                <span>Saturday & Sunday: By Appointment Only</span>
+                (949) 287 6622
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__center">
+              <h4>Customer care</h4>
+              <div class="footer__nav">
+                <ul>
+                  <li><a href="javascript:;">Search</a></li>
+                  <li><a href="javascript:;">Contact</a></li>
+                  <li><a href="javascript:;">Privacy policy</a></li>
+                  <li><a href="javascript:;">Terms of service</a></li>
+                  <li>
+                    <a href="javascript:;"
+                      >Do not sell my personal information</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 p-0">
+            <div class="footer__right">
+              <h4>SIGN UP AND SAVE</h4>
+              <p>
+                Subscribe to get special offers, free giveaways, and
+                once-in-a-lifetime deals.
+              </p>
+              <form>
+                <div class="form-group">
+                  <input
+                    required
+                    class="form-control form-contact-us"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                  <button type="submit" class="signup__btn">Shop now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-7 p-0">
+            <div class="bottom__left">
+              <p>© 2023 Kissed By Tulips</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-5 p-0">
+            <div class="bottom__social">
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/facebook.svg" alt="Facebook"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/twitter.svg" alt="Twitter"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/instagram.svg" alt="Instagram"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="counter">
+    <a class="counter" href='https://thesiswritingservice.net/'>thesiswritingservice.net</a>
+    <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=40f121f6a4c07b28bfa1b637af226baf6d4035a5'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/927393/t/2"></script>
+</div>-->
+
+    <!-- Call on All Page -->
+    <script src="assets/js/vendors/a-jquery.js"></script>
+    <script src="assets/js/vendors/popper.min.js"></script>
+    <script src="assets/js/vendors/c-jquery.inview.min.js"></script>
+    <script src="assets/js/vendors/g-bootstrap.min.js"></script>
+    <script src="assets/js/vendors/b-css_browser_selector.js"></script>
+    <script src="assets/js/vendors/f-fancybox.js"></script>
+    <script src="assets/js/vendors/d-swiper.min.js"></script>
+    <script src="assets/js/vendors/aos.js"></script>
+
+    <!-- custom Javascript for UI -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+      AOS.init({
+        offset: 10,
+      });
+    </script>
+
+     <!-- js for heart -->
+     <script>
+      function toggleHeart(heart) {
+        heart.classList.toggle("checked");
+      }
+    </script>
+  </body>
+</html>

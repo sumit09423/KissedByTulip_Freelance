@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kissed by Tulips</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Luxury Flower Shop Located in Costa Mesa, CA that Specializes in Contemporary Floral Design"
+    />
+
+    <style>
+      .loader-first {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: #000;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .loader-first p {
+        margin-top: 1em;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 28px;
+      }
+
+      @media (min-width: 767px) {
+        .loader-first div {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+        }
+      }
+
+      .alert-warnning {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5em;
+        font-weight: 700;
+        color: #fff;
+        background: #000;
+        overflow: hidden;
+      }
+
+      .alert-warnning p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <link rel="icon" href="assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="assets/css/vendors/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/bootstrap-select.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/swiper.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/fancybox.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/vendors/aos.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/vendors/animate.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+  </head>
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-B3T8R9N5Z5"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-B3T8R9N5Z5");
+  </script>
+
+  <body>
+    <div id="portrait-warnning" class="alert-warnning" style="display: none">
+      <p>
+        For an optimal experience please<br />
+        rotate your device to portrait mode
+      </p>
+    </div>
+
+    <!--<div class="loader-first">
+    <div>
+        <img src="assets/images/logo.png" alt="Loader">
+    </div>
+</div>-->
+    <div class="top__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-3 col-lg-2 col-md-3 col-5 p-0">
+            <a href="javascript:;" class="top__wrap">
+              <div class="phone__logo">
+                <img src="assets/images/phone.svg" alt="Phone" />
+              </div>
+              <p>(949) 287 6622</p>
+            </a>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-6 col-0 p-0">
+            <div class="top__center">
+              <p>
+                Luxury Flower Shop Located in Costa Mesa, CA that Specializes in
+                Contemporary Floral Design
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-2 col-md-3 col-7 p-0">
+            <a href="javascript:;" class="top__wrap last-child">
+              <div class="email__logo">
+                <img src="assets/images/email.svg" alt="Email" />
+              </div>
+              <p>kissedbytulip@gmail.com</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl col-lg col-md-0 p-0">
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="our-story.html">our story</a></li>
+              <li><a href="javascript:;">contact</a></li>
+              <li><a href="javascript:;">Delivery</a></li>
+            </ul>
+          </div>
+          <div class="col-xl col-lg col-md-4 col-5 p-0">
+            <div class="brang__logo">
+              <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-xl col-lg p-0 col-md-4 col-4">
+            <div class="head__icons">
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/search.svg" alt="Search"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/account.svg" alt="Account"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/cart.svg" alt="Cart"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="toogle-wrap">
+            <div class="toggle-menu">
+              <a href="javascript:"
+                ><span></span><span></span><span></span><span></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner inner--banner story--banner">
+        <div class="banner__slider">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__content">
+              <a href="index.html">Home</a>
+              <div class="breadcrumb__icon">
+                <img
+                  src="assets/images/breadcrumbs-icon.svg"
+                  alt="Breadcrumbs Icon"
+                />
+              </div>
+              <a href="index.html">Privacy Policy</a>
+            </div>
+          </div>
+          <div class="banner__content pb-5">
+            <h1>PRIVACY POLICY</h1>
+          </div>
+          <div class="mask"></div>
+        </div>
+      </section>
+      <section class="term-content">
+        <div class="container policy-content">
+          <h2 class="term-h2">Privacy Policy</h2>
+          <p class="term-p">
+            Crispy Fhres built the Drag Racing Lights app as a Commercial app.
+            This SERVICE is provided by Crispy Fhres and is intended for use as
+            is.
+          </p>
+          <p class="term-p">
+            This page is used to inform visitors regarding my policies with the
+            collection, use, and disclosure of Personal Information if anyone
+            decided to use my Service.
+          </p>
+          <p class="term-p">
+            If you choose to use my Service, then you agree to the collection
+            and use of information in relation to this policy. The Personal
+            Information that I collect is used for providing and improving the
+            Service. I will not use or share your information with anyone except
+            as described in this Privacy Policy.
+          </p>
+          <p class="term-p">
+            The terms used in this Privacy Policy have the same meanings as in
+            our Terms and Conditions, which is accessible at Drag Racing Lights
+            unless otherwise defined in this Privacy Policy.
+          </p>
+          <p class="p-t-title">
+            <strong>Information Collection and Use</strong>
+          </p>
+          <p class="term-p">
+            For a better experience, while using our Service, I may require you
+            to provide us with certain personally identifiable information. The
+            information that I request will be retained on your device and is
+            not collected by me in any way.
+          </p>
+          <p class="term-p">
+            The app does use third party services that may collect information
+            used to identify you.
+          </p>
+          <div>
+            <p class="term-p">
+              Link to privacy policy of third party service providers used by
+              the app
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  >Google Play Services</a
+                >
+              </li>
+              <!----><!----><!----><!----><!----><!----><!---->
+            </ul>
+          </div>
+          <p class="p-t-title"><strong>Log Data</strong></p>
+          <p class="term-p">
+            I want to inform you that whenever you use my Service, in a case of
+            an error in the app I collect data and information (through third
+            party products) on your phone called Log Data. This Log Data may
+            include information such as your device Internet Protocol (“IP”)
+            address, device name, operating system version, the configuration of
+            the app when utilizing my Service, the time and date of your use of
+            the Service, and other statistics.
+          </p>
+          <p class="p-t-title"><strong>Cookies</strong></p>
+          <p class="term-p">
+            Cookies are files with a small amount of data that are commonly used
+            as anonymous unique identifiers. These are sent to your browser from
+            the websites that you visit and are stored on your device's internal
+            memory.
+          </p>
+          <p class="term-p">
+            This Service does not use these “cookies” explicitly. However, the
+            app may use third party code and libraries that use “cookies” to
+            collect information and improve their services. You have the option
+            to either accept or refuse these cookies and know when a cookie is
+            being sent to your device. If you choose to refuse our cookies, you
+            may not be able to use some portions of this Service.
+          </p>
+          <p class="p-t-title"><strong>Service Providers</strong></p>
+          <p class="term-p">
+            I may employ third-party companies and individuals due to the
+            following reasons:
+          </p>
+          <ul>
+            <li>To facilitate our Service;</li>
+            <li>To provide the Service on our behalf;</li>
+            <li>To perform Service-related services; or</li>
+            <li>To assist us in analyzing how our Service is used.</li>
+          </ul>
+          <p class="term-p">
+            I want to inform users of this Service that these third parties have
+            access to your Personal Information. The reason is to perform the
+            tasks assigned to them on our behalf. However, they are obligated
+            not to disclose or use the information for any other purpose.
+          </p>
+          <p class="p-t-title"><strong>Security</strong></p>
+          <p class="term-p">
+            I value your trust in providing us your Personal Information, thus
+            we are striving to use commercially acceptable means of protecting
+            it. But remember that no method of transmission over the internet,
+            or method of electronic storage is 100% secure and reliable, and I
+            cannot guarantee its absolute security.
+          </p>
+          <p class="p-t-title"><strong>Links to Other Sites</strong></p>
+          <p class="term-p">
+            This Service may contain links to other sites. If you click on a
+            third-party link, you will be directed to that site. Note that these
+            external sites are not operated by me. Therefore, I strongly advise
+            you to review the Privacy Policy of these websites. I have no
+            control over and assume no responsibility for the content, privacy
+            policies, or practices of any third-party sites or services.
+          </p>
+          <p class="p-t-title"><strong>Children’s Privacy</strong></p>
+          <p class="term-p">
+            These Services do not address anyone under the age of 13. I do not
+            knowingly collect personally identifiable information from children
+            under 13. In the case I discover that a child under 13 has provided
+            me with personal information, I immediately delete this from our
+            servers. If you are a parent or guardian and you are aware that your
+            child has provided us with personal information, please contact me
+            so that I will be able to do necessary actions.
+          </p>
+          <p class="p-t-title">
+            <strong>Changes to This Privacy Policy</strong>
+          </p>
+          <p class="term-p">
+            I may update our Privacy Policy from time to time. Thus, you are
+            advised to review this page periodically for any changes. I will
+            notify you of any changes by posting the new Privacy Policy on this
+            page. These changes are effective immediately after they are posted
+            on this page.
+          </p>
+          <p class="p-t-title"><strong>Contact Us</strong></p>
+          <p class="term-p">
+            If you have any questions or suggestions about my Privacy Policy, do
+            not hesitate to contact me.
+          </p>
+          <p class="term-p">
+            This privacy policy page was created at
+            <a href="https://privacypolicytemplate.net" target="_blank"
+              >privacypolicytemplate.net</a
+            >
+            and modified/generated by
+            <a
+              href="https://app-privacy-policy-generator.firebaseapp.com/"
+              target="_blank"
+              >App Privacy Policy Generator</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="inner">
+      <div class="container">
+        <div class="row m-0 align-items-start justify-content-between">
+          <div class="col-12 p-0">
+            <div class="footer__top">
+              <div class="footer__logo">
+                <a href="index.html">
+                  <img src="assets/images/footer-logo.svg" alt="Footer Logo" />
+                </a>
+              </div>
+              <div class="footer__image">
+                <img src="assets/images/footer-image.png" alt="Footer Image" />
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__left">
+              <h4>Visit us</h4>
+              <p>
+                1838 Newport Blvd. Costa Mesa, Ca 92627
+                <span>Monday to Friday: 9:00am - 4:00pm</span>
+                <span>Saturday & Sunday: By Appointment Only</span>
+                (949) 287 6622
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__center">
+              <h4>Customer care</h4>
+              <div class="footer__nav">
+                <ul>
+                  <li><a href="javascript:;">Search</a></li>
+                  <li><a href="javascript:;">Contact</a></li>
+                  <li><a href="javascript:;">Privacy policy</a></li>
+                  <li><a href="javascript:;">Terms of service</a></li>
+                  <li>
+                    <a href="javascript:;"
+                      >Do not sell my personal information</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 p-0">
+            <div class="footer__right">
+              <h4>SIGN UP AND SAVE</h4>
+              <p>
+                Subscribe to get special offers, free giveaways, and
+                once-in-a-lifetime deals.
+              </p>
+              <form>
+                <div class="form-group">
+                  <input
+                    required
+                    class="form-control form-contact-us"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                  <button type="submit" class="signup__btn">Shop now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-7 p-0">
+            <div class="bottom__left">
+              <p>© 2023 Kissed By Tulips</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-5 p-0">
+            <div class="bottom__social">
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/facebook.svg" alt="Facebook"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/twitter.svg" alt="Twitter"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/instagram.svg" alt="Instagram"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="counter">
+    <a class="counter" href='https://thesiswritingservice.net/'>thesiswritingservice.net</a>
+    <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=40f121f6a4c07b28bfa1b637af226baf6d4035a5'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/927393/t/2"></script>
+</div>-->
+
+    <!-- Call on All Page -->
+    <script src="assets/js/vendors/a-jquery.js"></script>
+    <script src="assets/js/vendors/popper.min.js"></script>
+    <script src="assets/js/vendors/c-jquery.inview.min.js"></script>
+    <script src="assets/js/vendors/g-bootstrap.min.js"></script>
+    <script src="assets/js/vendors/b-css_browser_selector.js"></script>
+    <script src="assets/js/vendors/f-fancybox.js"></script>
+    <script src="assets/js/vendors/d-swiper.min.js"></script>
+    <script src="assets/js/vendors/aos.js"></script>
+
+    <!-- custom Javascript for UI -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+      AOS.init({
+        offset: 10,
+      });
+    </script>
+  </body>
+</html>

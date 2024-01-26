@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kissed by Tulips</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Luxury Flower Shop Located in Costa Mesa, CA that Specializes in Contemporary Floral Design"
+    />
+
+    <style>
+      .loader-first {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: #000;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .loader-first p {
+        margin-top: 1em;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 28px;
+      }
+
+      @media (min-width: 767px) {
+        .loader-first div {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+        }
+      }
+
+      .alert-warnning {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5em;
+        font-weight: 700;
+        color: #fff;
+        background: #000;
+        overflow: hidden;
+      }
+
+      .alert-warnning p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+
+    <link rel="icon" href="assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/assets/css/cdn.css" />
+    <link
+      href="assets/css/vendors/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/bootstrap-select.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/swiper.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/fancybox.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/vendors/aos.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/vendors/animate.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+  </head>
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-B3T8R9N5Z5"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-B3T8R9N5Z5");
+  </script>
+
+  <body>
+    <div id="portrait-warnning" class="alert-warnning" style="display: none">
+      <p>
+        For an optimal experience please<br />
+        rotate your device to portrait mode
+      </p>
+    </div>
+
+    <!--<div class="loader-first">
+    <div>
+        <img src="assets/images/logo.png" alt="Loader">
+    </div>
+</div>-->
+    <div class="top__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-3 col-lg-2 col-md-3 col-5 p-0">
+            <a href="javascript:;" class="top__wrap">
+              <div class="phone__logo">
+                <img src="assets/images/phone.svg" alt="Phone" />
+              </div>
+              <p>(949) 287 6622</p>
+            </a>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-6 col-0 p-0">
+            <div class="top__center">
+              <p>
+                Luxury Flower Shop Located in Costa Mesa, CA that Specializes in
+                Contemporary Floral Design
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-2 col-md-3 col-7 p-0">
+            <a href="javascript:;" class="top__wrap last-child">
+              <div class="email__logo">
+                <img src="assets/images/email.svg" alt="Email" />
+              </div>
+              <p>kissedbytulip@gmail.com</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl col-lg col-md-0 p-0">
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="our-story.html">our story</a></li>
+              <li><a href="javascript:;">contact</a></li>
+              <li><a href="javascript:;">Delivery</a></li>
+            </ul>
+          </div>
+          <div class="col-xl col-lg col-md-4 col-5 p-0">
+            <div class="brang__logo">
+              <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-xl col-lg p-0 col-md-4 col-4">
+            <div class="head__icons">
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/search.svg" alt="Search"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/account.svg" alt="Account"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/cart.svg" alt="Cart"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="toogle-wrap">
+            <div class="toggle-menu">
+              <a href="javascript:"
+                ><span></span><span></span><span></span><span></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="Main-pdp-section">
+        <div class="pdp_main">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__content">
+              <a href="index.html" class="pdp-a">Home</a>
+              <div class="breadcrumb__icon">
+                <img
+                  style="width: 15px"
+                  src="assets/images/Graterthan Arrow.png"
+                  alt="Breadcrumbs Icon"
+                />
+              </div>
+              <a href="index.html" class="pdp-a">Cart</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Page -->
+      <section class="like--section">
+        <div class="container">
+          <div class="btn-area row">
+            <div class="col-lg-6 d-flex justify-content-center btn-click px-0">
+              <button onclick="showDiv(1)" id="btn1">Store Pickup</button>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center btn-click px-0">
+              <button onclick="showDiv(2)" id="btn2">Local Delivery</button>
+            </div>
+          </div>
+        </div>
+        <div class="container cart-item">
+          <div id="div1" class="row cart-item-sec">
+            <div>
+              <div class="col-md-12 row d-flex align-items-center m-0">
+                <div class="col-md-2">
+                  <img
+                    src="./assets/images/shop2.png"
+                    class="img_cart"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-2 cart-title">Sherbet</div>
+                <div class="col-md-2 cart-title">$27.50</div>
+                <div class="col-md-2">
+                  <div class="product-count-cart">
+                    <button class="button-count-cart no-active" disabled>
+                      -
+                    </button>
+                    <input
+                      type="text"
+                      readonly
+                      class="number-product"
+                      value="1"
+                    />
+                    <button class="button-count-cart">+</button>
+                  </div>
+                </div>
+                <div class="col-md-2"><p class="title-color">$27.50</p></div>
+                <div class="col-md-2 d-flex justify-content-center">
+                  <a href="#" class="title-color-underline">Remove</a>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <div class="form-group">
+                    <p class="p-0 m-0 mt-3 fs-3">Text area Tiitle hear</p>
+                    <textarea class="form-control" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="col-lg-12 row d-flex align-items-center m-0">
+                <div class="col-md-2">
+                  <img
+                    src="./assets/images/shop2.png"
+                    class="img_cart"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-2 cart-title"></div>
+                <div class="col-md-2 cart-title">$27.50</div>
+                <div class="col-md-2">
+                  <div class="product-count-cart">
+                    <button class="button-count-cart no-active" disabled>
+                      -
+                    </button>
+                    <input
+                      type="text"
+                      readonly
+                      class="number-product"
+                      value="1"
+                    />
+                    <button class="button-count-cart">+</button>
+                  </div>
+                </div>
+                <div class="col-md-2"><p class="title-color">$27.50</p></div>
+                <div class="col-md-2 d-flex justify-content-center">
+                  <a href="#" class="title-color-underline">Remove</a>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <div class="form-group">
+                    <p class="p-0 m-0 mt-3 fs-3">Text area Tiitle hear</p>
+                    <textarea class="form-control" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row m-0 mt-4">
+              <div class="col-md-12 justify-content-between row m-0 p-4">
+                <div class="col-md-5 locaton">
+                  <span
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="s-localtion">Store Location</p>
+                    <a href="#" class="s-info">More Information</a>
+                  </span>
+                  <span class="justify-content-between">
+                    <p class="name-order">Kissed By Tulips</p>
+                    <p class="address-order">
+                      1838 Newport BoulevardCosta Mesa, 92627
+                    </p>
+                  </span>
+                  <input
+                    placeholder="Choose a date & time"
+                    type="text"
+                    onfocus="(this.type = 'date')"
+                    id="date"
+                  />
+                </div>
+                <div class="col-md-5 payment">
+                  <span class="payment-div">
+                    <p class="total-div">Subtotal</p>
+                    <p class="total-div-price">$82.50</p>
+                  </span>
+                  <hr />
+                  <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-check-out">
+                      Proceed to Check out
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex col-md-12 py-3">
+                <div class="col-md-6 d-flex">
+                  <svg
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.7071 4.29289C12.0976 4.68342 12.0976 5.31658 11.7071 5.70711L6.41421 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H6.41421L11.7071 18.2929C12.0976 18.6834 12.0976 19.3166 11.7071 19.7071C11.3166 20.0976 10.6834 20.0976 10.2929 19.7071L3.29289 12.7071C3.10536 12.5196 3 12.2652 3 12C3 11.7348 3.10536 11.4804 3.29289 11.2929L10.2929 4.29289C10.6834 3.90237 11.3166 3.90237 11.7071 4.29289Z"
+                        fill="#006A6D"
+                      ></path>
+                    </g></svg
+                  ><a href="#" class="cart-text-a">Continue Shopping</a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                  <a href="#" class="cart-text-a">Clear Shopping Cart</a>
+                  <svg
+                    fill="#006A6D"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 64 64"
+                    data-name="Layer 1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#006A6D"
+                    stroke-width="1.088"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title></title>
+                      <path
+                        d="M50.86,13.38H13a1.5,1.5,0,0,1,0-3H50.86a1.5,1.5,0,0,1,0,3Z"
+                      ></path>
+                      <path
+                        d="M42.4,57.93H21.48a5.5,5.5,0,0,1-5.5-5.5V11.87a1.5,1.5,0,0,1,1.5-1.5H46.4a1.5,1.5,0,0,1,1.5,1.5V52.43A5.51,5.51,0,0,1,42.4,57.93ZM19,13.37V52.43a2.5,2.5,0,0,0,2.5,2.5H42.4a2.5,2.5,0,0,0,2.5-2.5V13.37Z"
+                      ></path>
+                      <path
+                        d="M40,13.37H23.9a1.5,1.5,0,0,1-1.5-1.5V6.57a1.5,1.5,0,0,1,1.5-1.5H40a1.5,1.5,0,0,1,1.5,1.5v5.3A1.5,1.5,0,0,1,40,13.37Zm-14.58-3H38.48V8.07H25.4Z"
+                      ></path>
+                      <path
+                        d="M24.94,47.61a1.5,1.5,0,0,1-1.5-1.5V21.46a1.5,1.5,0,0,1,3,0V46.11A1.5,1.5,0,0,1,24.94,47.61Z"
+                      ></path>
+                      <path
+                        d="M38.94,47.61a1.5,1.5,0,0,1-1.5-1.5V21.46a1.5,1.5,0,0,1,3,0V46.11A1.5,1.5,0,0,1,38.94,47.61Z"
+                      ></path>
+                      <path
+                        d="M31.94,40.38a1.5,1.5,0,0,1-1.5-1.5V28.7a1.5,1.5,0,1,1,3,0V38.88A1.5,1.5,0,0,1,31.94,40.38Z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="div2" class="hidden cart-item-sec">
+            <h2>You can Add Whatever details you Need</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="like--section">
+        <div class="container">
+          <div class="row m-0">
+            <div class="col-12 p-0">
+              <div class="like__head">
+                <h2 class="pdp-title">Popular picks</h2>
+              </div>
+            </div>
+            <div class="col-12 p-0">
+              <div class="like__slider">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="javascript:;" class="shop__box">
+                        <div class="box__image">
+                          <img src="assets/images/shop1.png" alt="Shop1" />
+                        </div>
+                        <div class="box__bottom">
+                          <h4>Pool side</h4>
+                          <p>$125.00</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="javascript:;" class="shop__box">
+                        <div class="box__image">
+                          <img src="assets/images/shop2.png" alt="Shop1" />
+                        </div>
+                        <div class="box__bottom">
+                          <h4>Be Kind</h4>
+                          <p>$125.00</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="javascript:;" class="shop__box">
+                        <div class="box__image">
+                          <img src="assets/images/shop3.png" alt="Shop1" />
+                        </div>
+                        <div class="box__bottom">
+                          <h4>Sherbet</h4>
+                          <p>$75.00</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="javascript:;" class="shop__box">
+                        <div class="box__image">
+                          <img src="assets/images/shop1.png" alt="Shop1" />
+                        </div>
+                        <div class="box__bottom">
+                          <h4>Pool side</h4>
+                          <p>$125.00</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="javascript:;" class="shop__box">
+                        <div class="box__image">
+                          <img src="assets/images/shop2.png" alt="Shop1" />
+                        </div>
+                        <div class="box__bottom">
+                          <h4>Be Kind</h4>
+                          <p>$125.00</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="javascript:;" class="shop__box">
+                        <div class="box__image">
+                          <img src="assets/images/shop3.png" alt="Shop1" />
+                        </div>
+                        <div class="box__bottom">
+                          <h4>Sherbet</h4>
+                          <p>$75.00</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop__slider__controls">
+                  <div
+                    class="swiper-button-next"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Next slide"
+                  ></div>
+                  <div
+                    class="swiper-button-prev"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Previous slide"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="inner">
+      <div class="container">
+        <div class="row m-0 align-items-start justify-content-between">
+          <div class="col-12 p-0">
+            <div class="footer__top">
+              <div class="footer__logo">
+                <a href="index.html">
+                  <img src="assets/images/footer-logo.svg" alt="Footer Logo" />
+                </a>
+              </div>
+              <div class="footer__image">
+                <img src="assets/images/footer-image.png" alt="Footer Image" />
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__left">
+              <h4>Visit us</h4>
+              <p>
+                1838 Newport Blvd. Costa Mesa, Ca 92627
+                <span>Monday to Friday: 9:00am - 4:00pm</span>
+                <span>Saturday & Sunday: By Appointment Only</span>
+                (949) 287 6622
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__center">
+              <h4>Customer care</h4>
+              <div class="footer__nav">
+                <ul>
+                  <li><a href="javascript:;">Search</a></li>
+                  <li><a href="javascript:;">Contact</a></li>
+                  <li><a href="javascript:;">Privacy policy</a></li>
+                  <li><a href="javascript:;">Terms of service</a></li>
+                  <li>
+                    <a href="javascript:;"
+                      >Do not sell my personal information</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 p-0">
+            <div class="footer__right">
+              <h4>SIGN UP AND SAVE</h4>
+              <p>
+                Subscribe to get special offers, free giveaways, and
+                once-in-a-lifetime deals.
+              </p>
+              <form>
+                <div class="form-group">
+                  <input
+                    required
+                    class="form-control"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                  <button type="submit" class="signup__btn">Shop now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-7 p-0">
+            <div class="bottom__left">
+              <p>© 2023 Kissed By Tulips</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-5 p-0">
+            <div class="bottom__social">
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/facebook.svg" alt="Facebook"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/twitter.svg" alt="Twitter"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/instagram.svg" alt="Instagram"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="counter">
+    <a class="counter" href='https://thesiswritingservice.net/'>thesiswritingservice.net</a>
+    <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=40f121f6a4c07b28bfa1b637af226baf6d4035a5'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/927393/t/2"></script>
+</div>-->
+
+    <!-- Call on All Page -->
+    <script src="assets/js/vendors/a-jquery.js"></script>
+    <script src="assets/js/vendors/popper.min.js"></script>
+    <script src="assets/js/vendors/c-jquery.inview.min.js"></script>
+    <script src="assets/js/vendors/g-bootstrap.min.js"></script>
+    <script src="assets/js/vendors/b-css_browser_selector.js"></script>
+    <script src="assets/js/vendors/f-fancybox.js"></script>
+    <script src="assets/js/vendors/d-swiper.min.js"></script>
+    <script src="assets/js/vendors/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom Javascript for UI -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+      AOS.init({
+        offset: 10,
+      });
+    </script>
+
+    <!-- This Js is For the Product Counter btn -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Retrieve the visibility state from local storage
+        var div1Visible = localStorage.getItem("div1Visible") === "true";
+        var div2Visible = localStorage.getItem("div2Visible") === "true";
+
+        // Set the initial visibility based on the stored state
+        document.getElementById("div1").style.display = div1Visible
+          ? "block"
+          : "none";
+        document.getElementById("div2").style.display = div2Visible
+          ? "block"
+          : "none";
+
+        // Add the active class to the corresponding button
+        if (div1Visible) {
+          document.getElementById("btn1").classList.add("active-btn");
+        } else if (div2Visible) {
+          document.getElementById("btn2").classList.add("active-btn");
+        }
+      });
+
+      function showDiv(divNumber) {
+        // Hide all divs
+        document.getElementById("div1").style.display = "none";
+        document.getElementById("div2").style.display = "none";
+
+        // Remove active class from all buttons
+        document.getElementById("btn1").classList.remove("active-btn");
+        document.getElementById("btn2").classList.remove("active-btn");
+
+        // Show the selected div
+        document.getElementById("div" + divNumber).style.display = "block";
+
+        // Add active class to the clicked button
+        document.getElementById("btn" + divNumber).classList.add("active-btn");
+
+        // Save the visibility state to local storage
+        localStorage.setItem("div1Visible", divNumber === 1);
+        localStorage.setItem("div2Visible", divNumber === 2);
+      }
+    </script>
+
+    <script>
+      var num;
+
+      $(".button-count-cart:first-child").click(function () {
+        num = parseInt($("input:text").val());
+        if (num > 1) {
+          $("input:text").val(num - 1);
+        }
+        if (num == 2) {
+          $(".button-count-cart:first-child").prop("disabled", true);
+        }
+        if (num == 10) {
+          $(".button-count-cart:last-child").prop("disabled", false);
+        }
+      });
+
+      $(".button-count-cart:last-child").click(function () {
+        num = parseInt($("input:text").val());
+        if (num < 10) {
+          $("input:text").val(num + 1);
+        }
+        if (num > 0) {
+          $(".button-count-cart:first-child").prop("disabled", false);
+        }
+        if (num == 9) {
+          $(".button-count-cart:last-child").prop("disabled", true);
+        }
+      });
+    </script>
+
+    <!-- Slider JS -->
+    <script>
+      var swiper = new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        centerSlide: "true",
+        fade: "true",
+        grabCursor: "true",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

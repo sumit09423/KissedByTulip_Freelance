@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kissed by Tulips</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Luxury Flower Shop Located in Costa Mesa, CA that Specializes in Contemporary Floral Design"
+    />
+
+    <style>
+      .loader-first {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: #000;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .loader-first p {
+        margin-top: 1em;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 28px;
+      }
+
+      @media (min-width: 767px) {
+        .loader-first div {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+        }
+      }
+
+      .alert-warnning {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5em;
+        font-weight: 700;
+        color: #fff;
+        background: #000;
+        overflow: hidden;
+      }
+
+      .alert-warnning p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #006a6d;
+        color: #fff;
+      }
+
+      td {
+        background-color: #e0f7fa;
+      }
+
+      .profile-sec {
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .profile-sec:hover .shadow {
+      background-color: rgba(255, 255, 255, 0.543);
+    }
+
+    .img-container {
+      position: relative;
+      width: 100px; /* Set your desired width */
+      height: 100px; /* Set your desired height */
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    .img-man {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+
+    .up-title {
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .svg-icon {
+      width: 100%;
+      height: 100%;
+      fill: #ffffff;
+      pointer-events: none; 
+    }
+
+    .upload-icon {
+      position: absolute;
+      top: 22%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .profile-sec:not(:hover) .upload-icon {
+      opacity: 0;
+    }
+
+     /* Hidden file input style */
+     #fileInput {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      z-index: -1;
+    }
+  
+    
+    </style>
+
+    <link rel="icon" href="assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="assets/css/vendors/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/bootstrap-select.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/swiper.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendors/fancybox.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/vendors/aos.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/vendors/animate.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+  </head>
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-B3T8R9N5Z5"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-B3T8R9N5Z5");
+  </script>
+
+  <body>
+    <div id="portrait-warnning" class="alert-warnning" style="display: none">
+      <p>
+        For an optimal experience please<br />
+        rotate your device to portrait mode
+      </p>
+    </div>
+
+    <!--<div class="loader-first">
+    <div>
+        <img src="assets/images/logo.png" alt="Loader">
+    </div>
+</div>-->
+    <div class="top__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-3 col-lg-2 col-md-3 col-5 p-0">
+            <a href="javascript:;" class="top__wrap">
+              <div class="phone__logo">
+                <img src="assets/images/phone.svg" alt="Phone" />
+              </div>
+              <p>(949) 287 6622</p>
+            </a>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-6 col-0 p-0">
+            <div class="top__center">
+              <p>
+                Luxury Flower Shop Located in Costa Mesa, CA that Specializes in
+                Contemporary Floral Design
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-2 col-md-3 col-7 p-0">
+            <a href="javascript:;" class="top__wrap last-child">
+              <div class="email__logo">
+                <img src="assets/images/email.svg" alt="Email" />
+              </div>
+              <p>kissedbytulip@gmail.com</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl col-lg col-md-0 p-0">
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="our-story.html">our story</a></li>
+              <li><a href="javascript:;">contact</a></li>
+              <li><a href="javascript:;">Delivery</a></li>
+            </ul>
+          </div>
+          <div class="col-xl col-lg col-md-4 col-5 p-0">
+            <div class="brang__logo">
+              <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-xl col-lg p-0 col-md-4 col-4">
+            <div class="head__icons">
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/search.svg" alt="Search"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/account.svg" alt="Account"
+                /></a>
+              </div>
+              <div class="icon__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/cart.svg" alt="Cart"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="toogle-wrap">
+            <div class="toggle-menu">
+              <a href="javascript:"
+                ><span></span><span></span><span></span><span></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="Main-pdp-section">
+        <div class="pdp_main">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__content">
+              <a href="index.html" class="pdp-a">Home</a>
+              <div class="breadcrumb__icon">
+                <img
+                  style="width: 15px"
+                  src="assets/images/Graterthan Arrow.png"
+                  alt="Breadcrumbs Icon"
+                />
+              </div>
+              <a href="index.html" class="pdp-a">User Profile</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mb-3" id="main-admin">
+        <div class="aside">
+          <!-- Edit -->
+          <span class="profile-sec" onclick="openFileUpload()">
+            <div class="img-container">
+              
+              <img class="img-man" src="./assets/images/shop2.png" alt="User Image" >
+              <div class="shadow"></div>
+              <svg class="upload-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#006a6d">
+                <circle cx="12" cy="13" r="3" stroke-width="1.5"></circle>
+                <path d="M2 13.3636C2 10.2994 2 8.76721 2.74902 7.6666C3.07328 7.19014 3.48995 6.78104 3.97524 6.46268C4.69555 5.99013 5.59733 5.82123 6.978 5.76086C7.63685 5.76086 8.20412 5.27068 8.33333 4.63636C8.52715 3.68489 9.37805 3 10.3663 3H13.6337C14.6219 3 15.4728 3.68489 15.6667 4.63636C15.7959 5.27068 16.3631 5.76086 17.022 5.76086C18.4027 5.82123 19.3044 5.99013 20.0248 6.46268C20.51 6.78104 20.9267 7.19014 21.251 7.6666C22 8.76721 22 10.2994 22 13.3636C22 16.4279 22 17.9601 21.251 19.0607C20.9267 19.5371 20.51 19.9462 20.0248 20.2646C18.9038 21 17.3433 21 14.2222 21H9.77778C6.65675 21 5.09624 21 3.97524 20.2646C3.48995 19.9462 3.07328 19.5371 2.74902 19.0607C2.53746 18.7498 2.38566 18.4045 2.27673 18" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M19 10H18" stroke-width="1.5" stroke-linecap="round"></path>
+              </svg>
+            
+                 <input type="file" id="fileInput" accept="image/*" onchange="displayImage(this)" >
+              
+            </div>
+            <p class="up-title">Username</p>
+            <p>Lorem ipsum dolor sit amet</p>
+          </span>
+          <div class="d-flex flex-column">
+            <a class="menu" href="#" target="_blank" >
+              Basic Information
+            </a>
+            <a class="menu" href="#" target="_blank" rel="noopener noreferrer">
+              Notification
+            </a>
+            <a href="#" class="menu" target="_blank" rel="noopener noreferrer">
+            Order History
+            </a>
+            <a href="#" class="menu"  target="_blank" rel="noopener noreferrer">
+              Delivery History
+            </a>
+            <a href="#" class="menu" target="_blank" rel="noopener noreferrer">
+              Payment Information
+            </a>
+            <a href="#" class="menu" target="_blank" rel="noopener noreferrer">
+            Refund
+          </a>
+          <a href="#" class="menu" target="_blank" rel="noopener noreferrer">
+            Edit Profile
+          </a> 
+        </div> 
+        </div>
+        <div class="main-admin-section">
+          <div id="menu1" class="submenu">
+            <h2 class="uad-h2">User Information</h2>
+            <label for="username" class="title-d1">Username:</label>
+            <p id="username">JohnDoe123</p>
+
+            <label for="fullName" class="title-d1">Full Name:</label>
+            <p id="fullName">John Doe</p>
+
+            <label for="email" class="title-d1">Email:</label>
+            <p id="email">john.doe@example.com</p>
+
+            <label for="location" class="title-d1">Location:</label>
+            <p id="location">City, Country</p>
+
+            <!-- Add more information as needed -->
+            <label for="age" class="title-d1">Age:</label>
+            <p id="age">25</p>
+
+            <label for="occupation" class="title-d1">Occupation:</label>
+            <p id="occupation">Software Developer</p>
+          </div>
+          <div id="menu2" class="submenu">
+            <h2 class="uad-h2">Notification</h2>
+            <label for="category" class="title-d1">Category:</label>
+            <p id="category">Technology</p>
+
+            <label for="featuredItem" class="title-d1">Featured Item:</label>
+            <p id="featuredItem">Product XYZ</p>
+
+            <label for="description" class="title-d1">Description:</label>
+            <p id="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              sagittis...
+            </p>
+
+            <!-- Add more information as needed -->
+            <label for="rating">Rating:</label>
+            <p id="rating">4.5/5</p>
+
+            <label for="price">Price:</label>
+            <p id="price">$49.99</p>
+          </div>
+          <div id="menu3" class="submenu">
+            <h2 class="uad-h2">Order History</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-small">Order ID</th>
+                  <th class="th-small">Product</th>
+                  <th class="th-small">Quantity</th>
+                  <th class="th-small">Total Price</th>
+                  <th class="th-small">Order Date</th>
+                  <th class="th-small">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="th-small">1</td>
+                  <td class="th-small">Product A</td>
+                  <td class="th-small">3</td>
+                  <td class="th-small">$150.00</td>
+                  <td class="th-small">2023-01-15</td>
+                  <td class="th-small">Shipped</td>
+                </tr>
+                <tr>
+                  <td class="th-small">2</td>
+                  <td class="th-small">Product B</td>
+                  <td class="th-small">2</td>
+                  <td class="th-small">$100.00</td>
+                  <td class="th-small">2023-02-02</td>
+                  <td class="th-small">Delivered</td>
+                </tr>
+                <!-- Add more orders as needed -->
+              </tbody>
+            </table>
+          </div>
+          <div id="menu4" class="submenu"
+            <h2 class="uad-h2">Delivery History</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th class="th-small">Order ID</th>
+                  <th class="th-small">Product</th>
+                  <th class="th-small">Quantity</th>
+                  <th class="th-small">Total Price</th>
+                  <th class="th-small">Order Date</th>
+                  <th class="th-small">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="th-small">1</td>
+                  <td class="th-small">Product A</td>
+                  <td class="th-small">3</td>
+                  <td class="th-small">$150.00</td>
+                  <td class="th-small">2023-01-15</td>
+                  <td class="th-small">Shipped</td>
+                </tr>
+                <tr>
+                  <td class="th-small">2</td>
+                  <td class="th-small">Product B</td>
+                  <td class="th-small">2</td>
+                  <td class="th-small">$100.00</td>
+                  <td class="th-small">2023-02-02</td>
+                  <td class="th-small">Delivered</td>
+                </tr>
+                <!-- Add more orders as needed -->
+              </tbody>
+            </table>
+          </div>
+          <div id="menu5" class="submenu">
+            <h2 class="uad-h2">Payment Information</h2>
+            <label for="productName" class="title-d1">Product Name:</label>
+            <p id="productName">Amazing Product</p>
+
+            <label for="price" class="title-d1">Price:</label>
+            <p id="price">$99.99</p>
+
+            <label for="paymentMethod" class="title-d1">Payment Method:</label>
+            <p id="paymentMethod">Credit Card</p>
+
+            <label for="cardNumber" class="title-d1">Card Number:</label>
+            <p id="cardNumber">**** **** **** 1234</p>
+
+            <!-- Add more payment-related information as needed -->
+            <label for="expirationDate" class="title-d1"
+              >Expiration Date:</label
+            >
+            <p id="expirationDate">MM/YY</p>
+
+            <label for="securityCode" class="title-d1">Security Code:</label>
+            <p id="securityCode">123</p>
+          </div>
+          <div id="menu6" class="submenu">
+            <label class="title-d1" for="product">Product:</label>
+            <p id="product">Refundable Item XYZ</p>
+
+            <label class="title-d1" for="purchaseDate">Purchase Date:</label>
+            <p id="purchaseDate">January 15, 2023</p>
+
+            <label class="title-d1" for="refundPolicy">Refund Policy:</label>
+            <p id="refundPolicy">
+              Our refund policy allows for a refund within 30 days of the
+              purchase date. If you are not satisfied with your purchase, please
+              contact our support team.
+            </p>
+
+            <!-- Add more refund-related information as needed -->
+            <label class="title-d1" for="refundProcess">Refund Process:</label>
+            <p id="refundProcess">
+              To initiate a refund, please email support@example.com with your
+              order details and reason for the refund. Refunds are typically
+              processed within 5-7 business days.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="inner">
+      <div class="container">
+        <div class="row m-0 align-items-start justify-content-between">
+          <div class="col-12 p-0">
+            <div class="footer__top">
+              <div class="footer__logo">
+                <a href="index.html">
+                  <img src="assets/images/footer-logo.svg" alt="Footer Logo" />
+                </a>
+              </div>
+              <div class="footer__image">
+                <img src="assets/images/footer-image.png" alt="Footer Image" />
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__left">
+              <h4>Visit us</h4>
+              <p>
+                1838 Newport Blvd. Costa Mesa, Ca 92627
+                <span>Monday to Friday: 9:00am - 4:00pm</span>
+                <span>Saturday & Sunday: By Appointment Only</span>
+                (949) 287 6622
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 p-0">
+            <div class="footer__center">
+              <h4>Customer care</h4>
+              <div class="footer__nav">
+                <ul>
+                  <li><a href="javascript:;">Search</a></li>
+                  <li><a href="javascript:;">Contact</a></li>
+                  <li><a href="javascript:;">Privacy policy</a></li>
+                  <li><a href="javascript:;">Terms of service</a></li>
+                  <li>
+                    <a href="javascript:;"
+                      >Do not sell my personal information</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 p-0">
+            <div class="footer__right">
+              <h4>SIGN UP AND SAVE</h4>
+              <p>
+                Subscribe to get special offers, free giveaways, and
+                once-in-a-lifetime deals.
+              </p>
+              <form>
+                <div class="form-group">
+                  <input
+                    required
+                    class="form-control form-contact-us"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                  <button type="submit" class="signup__btn">Shop now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom__bar">
+      <div class="container">
+        <div class="row m-0 align-items-center justify-content-between">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-7 p-0">
+            <div class="bottom__left">
+              <p>© 2023 Kissed By Tulips</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-5 p-0">
+            <div class="bottom__social">
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/facebook.svg" alt="Facebook"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/twitter.svg" alt="Twitter"
+                /></a>
+              </div>
+              <div class="social__image">
+                <a href="javascript:;"
+                  ><img src="assets/images/instagram.svg" alt="Instagram"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="counter">
+    <a class="counter" href='https://thesiswritingservice.net/'>thesiswritingservice.net</a>
+    <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=40f121f6a4c07b28bfa1b637af226baf6d4035a5'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/927393/t/2"></script>
+</div>-->
+
+    <!-- Call on All Page -->
+    <script src="assets/js/vendors/a-jquery.js"></script>
+    <script src="assets/js/vendors/popper.min.js"></script>
+    <script src="assets/js/vendors/c-jquery.inview.min.js"></script>
+    <script src="assets/js/vendors/g-bootstrap.min.js"></script>
+    <script src="assets/js/vendors/b-css_browser_selector.js"></script>
+    <script src="assets/js/vendors/f-fancybox.js"></script>
+    <script src="assets/js/vendors/d-swiper.min.js"></script>
+    <script src="assets/js/vendors/aos.js"></script>
+
+    <!-- custom Javascript for UI -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+      AOS.init({
+        offset: 10,
+      });
+    </script>
+
+    <script>
+      // Define the function to switch content
+      function changeContent(menuId) {
+        // Hide all submenus
+        const submenus = document.querySelectorAll(".submenu");
+        submenus.forEach((submenu) => {
+          submenu.style.display = "none";
+        });
+
+        // Show the selected submenu
+        const selectedMenu = document.getElementById(menuId);
+        if (selectedMenu) {
+          selectedMenu.style.display = "block";
+        }
+      }
+
+      // Call the function with "menu1" as the default submenu to show
+      changeContent("menu1");
+    </script>
+
+<script>
+   function openFileUpload() {
+      // Trigger click event of the file input
+      document.getElementById('fileInput').click();
+    }
+
+    function displayImage(input) {
+      // You can add logic to display the selected image, e.g., by updating the src of an image element
+      // For simplicity, we'll log the filename to the console
+      const filename = input.files[0].name;
+      console.log('Selected file:', filename);
+    }
+  
+</script>
+  </body>
+</html>
